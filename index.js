@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const config = require("./src/configs");
+const config = require("./src/configs/config");
+const routes = require("./src/routes");
 
 app.use(express.json());
 
@@ -11,6 +12,8 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+
+app.use("/", routes);
 
 app.get("/", (req, res) => {
   res.json({ message: "ok" });
