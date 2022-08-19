@@ -1,8 +1,8 @@
 const express = require("express");
-const headerRoute = require("./header.route");
+const sidebarRoute = require("./sidebar.route");
 
 const router = express.Router();
 
-router.use("/header", headerRoute);
+router.use("/sidebar", sidebarRoute);
 
 module.exports = router;
