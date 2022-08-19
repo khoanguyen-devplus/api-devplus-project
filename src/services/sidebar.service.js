@@ -24,7 +24,7 @@ const putSidebar = async (id, body) => {
 
 const deleteSidebar = async (id) => {
   await sidebarModel.findByIdAndDelete(id);
-  return "This student has been deleted!";
+  return "This sidebar has been deleted!";
 };
 
 module.exports = {
