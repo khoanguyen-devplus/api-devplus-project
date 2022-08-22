@@ -5,6 +5,7 @@ const aboutRoute = require('./about.route');
 const concernRoute = require('./concern.route');
 const testimonialRoute = require('./testimonial.route');
 const skillRoute = require('./skill.route');
+const footerRoute = require('./footer.route');
 
 const router = express.Router();
 
@@ -14,5 +15,6 @@ router.use('/about', aboutRoute);
 router.use('/concern', concernRoute);
 router.use('/testimonial', testimonialRoute);
 router.use('/skill', skillRoute);
+router.use('/footer', footerRoute);
 
 module.exports = router;
