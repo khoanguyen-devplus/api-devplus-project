@@ -1,4 +1,6 @@
-module.exports.sidebarController = require('./sidebar.controller');
+module.exports.sidebarController = require("./sidebar.controller");
+module.exports.campusController = require("./campus.controller");
+module.exports.admissionController = require("./admission.controller");
 module.exports.bannerController = require('./banner.controller');
 module.exports.aboutController = require('./about.controller');
 module.exports.concernController = require('./concern.controller');

@@ -8,7 +8,10 @@ app.use(express.json());
 
 mongoose
   .connect(config.databaseURL)
-  .then(() => console.log("Database connection Successfully..."))
+  .then(() => {
+    console.log("Database connection Successfully...")
+    console.log(mongoose.connection.readyState);
+  })
   .catch((err) => {
     console.log(err);
   });
