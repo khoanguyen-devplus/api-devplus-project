@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 
 const footerSchema = new mongoose.Schema({
-	container: [
+	footerRow: [
 		{
 			heading: { type: String, required: true },
-			title: { type: String, required: true },
-			icon: { type: String },
+			items: [
+				{
+					title: { type: String, required: true },
+					icon: { type: String },
+				}
+			]
 		},
 	],
 	logoImg: { type: String, required: true },
