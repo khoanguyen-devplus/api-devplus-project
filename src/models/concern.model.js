@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 
 const concernSchema = new mongoose.Schema(
   {
-    heading: { type: String, required: true },
     concerns: [
       {
         question: { type: String, required: true },

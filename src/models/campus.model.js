@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 
 const campusSchema = new mongoose.Schema(
   {
-    title: { type: String, required: true },
     items: [
       {
         img: { type: String, required: true },
