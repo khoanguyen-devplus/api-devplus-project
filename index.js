@@ -3,8 +3,10 @@ const app = express();
 const mongoose = require("mongoose");
 const config = require("./src/configs/config");
 const routes = require("./src/routes");
+const cors = require("cors");
 
 app.use(express.json());
+app.use(cors({ origin: "*" }));
 
 mongoose
   .connect(config.databaseURL)
