@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const skillSchema = new mongoose.Schema({
-	heading: { type: String, required: true },
 	container: [
 		{
 			image: { type: String, required: true },
