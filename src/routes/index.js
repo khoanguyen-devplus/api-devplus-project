@@ -8,6 +8,7 @@ const skillRoute = require('./skill.route');
 const footerRoute = require('./footer.route');
 const campusRoute = require("./campus.route");
 const admissionRoute = require("./admission.route");
+const userRoute = require("./user.route");
 
 const router = express.Router();
 
@@ -25,5 +26,6 @@ router.use('/skill', skillRoute);
 router.use('/footer', footerRoute);
 router.use("/campus", campusRoute);
 router.use("/admission", admissionRoute);
+router.use("/user", userRoute);
 
 module.exports = router;

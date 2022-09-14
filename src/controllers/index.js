@@ -7,3 +7,4 @@ module.exports.concernController = require('./concern.controller');
 module.exports.testimonialController = require('./testimonial.controller');
 module.exports.skillController = require('./skill.controller');
 module.exports.footerController = require('./footer.controller');
+module.exports.userController = require('./user.controller');
