@@ -7,4 +7,4 @@ module.exports.concernModel = require('./concern.model');
 module.exports.testimonialModel = require('./testimonial.model');
 module.exports.skillModel = require('./skill.model');
 module.exports.footerModel = require('./footer.model');
-
+module.exports.userModel = require('./user.model');
